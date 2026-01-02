@@ -1,0 +1,22 @@
+[project]
+name = "classification-service"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "1337kid",email = "45532566+1337kid@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+fastapi = "^0.110"
+uvicorn = { extras = ["standard"], version = "^0.29" }
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
